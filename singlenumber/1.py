@@ -2,22 +2,24 @@ from typing import List
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        t1 = set(nums)
-        l = list(t1)
-        temp = 0
-        count = 0
+        td = dict()
+        res = 0
+        for i in range(len(nums)):
+            count = 0
+            for j in nums:
+                if nums[i] == j:
+                    count += 1
+                
+            td[nums[i]] = count
+        
+        
 
-        for i in l:
-            if i in nums:
-                count += 1
-                if count >= 2:
-                    count = 0
-                    continue
-                else:
-                    return i
-                    
-        return 0
+        for k in td:
+            if td[k] == 1:
+                return k
+
+        return 0          
 
 x = Solution()
-res = x.singleNumber([4,1,2,1,2])
+res = x.singleNumber([2,2,1])
 print(res)
