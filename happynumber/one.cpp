@@ -1,10 +1,13 @@
 #include <iostream>
 using namespace std;
 
-void checkhappynumber() {
-    cout << "Hello World" << endl;
+void checkhappynumber(int n) {
+    int temp = 0;
+    while (temp != 1) {
+
+    }
 }
 
 int main() {
-    checkhappynumber();
+    checkhappynumber(19);
 }
