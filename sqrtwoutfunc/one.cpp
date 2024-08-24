@@ -18,9 +18,10 @@ int sqe(int num) {
     
     return 0;
 }
+
 int main() {
 
-    int res = sqe(16);
+    int res = sqe(4);
     cout << "The square root is: " << res << endl;
     
     return 0;
