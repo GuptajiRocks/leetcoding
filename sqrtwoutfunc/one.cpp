@@ -9,7 +9,7 @@ int sqe(int num) {
     if (num == 1) {
         return 1;
     } else {
-        for (int i = 0; i < (num/2); i++) {
+        for (int i = 0; i <= (num/2); i++) {
             if (i*i == num) {
                 return i;
             }
