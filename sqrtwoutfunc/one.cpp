@@ -1,7 +1,11 @@
+//
+// Created by ariha on 24-08-2024.
+//
+
 #include<iostream>
 using namespace std;
 
-int sq(int num) {
+int sqe(int num) {
     if (num == 1) {
         return 1;
     } else {
@@ -11,10 +15,14 @@ int sq(int num) {
             }
         }
     }
+    
+    return 0;
 }
 int main() {
 
-    int res = sq(4);
+    int res = sqe(16);
     cout << "The square root is: " << res << endl;
+    
+    return 0;
 
 }
