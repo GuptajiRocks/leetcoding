@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "one",
+            "request": "launch",
+            "mainClass": "one",
+            "projectName": "Leetcoding_951d0fc9"
+        },
+        {
             "name": "C/C++: gcc.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
