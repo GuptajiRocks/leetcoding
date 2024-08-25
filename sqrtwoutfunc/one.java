@@ -17,6 +17,7 @@ public class one {
         System.out.println("Enter the number you wish to calculate square root of: ");
         int num = sc.nextInt();
         int res = sqe(num);
-        System.out.println(res);        
+        System.out.println(res);  
+        sc.close();      
     }
 }
