@@ -8,7 +8,7 @@ static int counter = 0;
 void merge(vector<int>& arr, int left, 
                      int mid, int right)
 {
-    counter = counter + left + mid + right;
+    // counter = counter + left + mid + right;
     int n1 = mid - left + 1;
     int n2 = right - mid;
 
@@ -32,6 +32,7 @@ void merge(vector<int>& arr, int left,
         if (L[i] <= R[j]) {
             arr[k] = L[i];
             i++;
+            counter += 1;
         }
         else {
             arr[k] = R[j];
@@ -81,7 +82,9 @@ void printVector(vector<int>& arr)
 // Driver code
 int main()
 {
-    vector<int> arr = { 12, 11, 13, 5, 6, 7 };
+    // vector<int> arr = { 12, 11, 13, 5, 6, 7 };
+    // int n = arr.size();
+    vector<int> arr = {98,54,223,457,0,88,666,100,45,69,478,654,742,20,30,78,0};
     int n = arr.size();
 
     cout << "Given vector is \n";

@@ -28,7 +28,8 @@ void bubsort(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {5,1,6,7,8,9};
+    int arr[] = {98,54,223,457,0,88,666,100,45,69,478,654,742,20,30,78,0};
+    int n = sizeof(arr)/sizeof(arr[0]);
 
-    bubsort(arr, 6);
+    bubsort(arr, n);
 }
