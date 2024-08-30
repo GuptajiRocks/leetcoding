@@ -1,4 +1,4 @@
-def les():
+def les(x):
     l = x.split(" ")
     count = 0
 
@@ -16,4 +16,5 @@ def les():
 x = "   fly me to   the moon   "
 
 leeng = les(x)
+print(leeng)
 
