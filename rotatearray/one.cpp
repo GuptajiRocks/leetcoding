@@ -26,6 +26,8 @@ int main() {
     int arr[] = {-1,-100,3,99};
     int len = sizeof(arr)/sizeof(arr[0]);
 
-    rota(arr, 2, len);
+    int co = 2;
+
+    rota(arr, co, len);
 
 }
