@@ -13,6 +13,26 @@ struct Node {
 
 int main() {
     Node* head = new Node(5);
-    head->next = new Node(4);
-    cout << "Memory Location: " << head->next << " Actual Value: " << head->next->data;
+    int len;
+    cout << "How many nodes you wish to add?: "; cin >> len;
+
+    for (int i = 0; i < len; i++) {
+        int td;
+        cin >> td;
+
+        Node* temp = new Node(td);
+        head->next = temp;
+    }
+
+    for (int i = 0; i < len; i++) {
+        Node* temp;
+        head->next = temp;
+        if (head->next == nullptr) {
+            break;
+        } else {
+            cout << temp->data;
+            temp++;
+        }
+    }
+
 }
