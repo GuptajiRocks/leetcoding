@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "A2008",
+            "request": "launch",
+            "mainClass": "codeforces.Probone.A2008",
+            "projectName": "Leetcoding_951d0fc9"
+        },
+        {
+            "type": "java",
+            "name": "A2008",
+            "request": "launch",
+            "mainClass": "codeforces.A2008.A2008",
+            "projectName": "Leetcoding_951d0fc9"
+        },
+        {
+            "type": "java",
             "name": "two",
             "request": "launch",
             "mainClass": "codeforces.prob29a.two",
