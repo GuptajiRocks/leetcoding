@@ -1,22 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Jesus {
-    int chc;
-    Jesus(int c) {
-        chc = c;
-    }
-
-    int tempsum = 0;
-
-    void trial() {
-        for (int i = 2; i < chc; i++) {
-            tempsum = tempsum + ((i-1)*i);
-        }
-    }
-
+int sum(int c) {
     
+}
 
+struct Jesus {
+    int num;
+    int sum;
 };
 
 int main() {
@@ -28,6 +19,8 @@ int main() {
     for (int i = 0; i < test; i++) {
         cin >> arr[i];
     }
+
+
 
 
 }
