@@ -5,32 +5,23 @@ using namespace std;
 
 
 
-int search(vector<int>& nums, int i, int target) {
-    int mid = 0 + (nums.size()+1)/2;
-    int left = i;
-    int right = nums.size();
+int binarySearch(int arr[], int low, int high, int x)
+{
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
 
-    if (nums[mid] == target) {
-        return mid;
-    }
+        if (arr[mid] == x)
+            return mid;
 
-    if (nums[mid] < target) {
-        left = mid;
+        if (arr[mid] < x)
+            low = mid + 1;
+        else
+            high = mid - 1;
     }
-
-    if (nums[mid] > target) {
-        right = mid;
-    }
-
-    if (mid == left || mid == right) {
-        search(nums, left, right);
-    }
+    return -1;
 }
 
 int main() {
-    vector<int> nums = {-1,0,3,5,9,12};
-    int idx = search(nums, 0, 3);
-    cout << idx << endl;
-
-    return 0;    
+    cout << "Hello World" << endl;
+    return 0;
 }
