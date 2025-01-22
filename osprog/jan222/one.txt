@@ -1,0 +1,5 @@
+Course Name,Course Code,Credits
+Mathematics,MATH101,4
+Physics,PHYS101,3
+Chemistry,CHEM101,3
+Computer Science,CS101,4
