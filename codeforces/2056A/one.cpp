@@ -35,13 +35,23 @@ int main() {
         co = co+1;
     } while (co < n);
 
-    cout << "Pairs have been entered" << endl;
-    cout << "-----------------------" << endl;
+    int xhigh = (jesus[n-1].first)+(sl);
+    int yhigh = (jesus[n-1].second)+(sl);
 
-    cout << "Now here is the updated counter of x, y" << endl;
-    cout << endl;
+    xhigh = xhigh - arr[0][0];
+    yhigh = yhigh - arr[0][1];
 
-    printPair(jesus, n);
+    int finsum = (xhigh*2)+(yhigh*2);
+
+    cout << finsum << endl;
+
+    // cout << "Pairs have been entered" << endl;
+    // cout << "-----------------------" << endl;
+
+    // cout << "Now here is the updated counter of x, y" << endl;
+    // cout << endl;
+
+    // printPair(jesus, n);
 
     return 0;
 }
