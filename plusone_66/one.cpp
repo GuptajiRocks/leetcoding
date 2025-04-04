@@ -22,7 +22,16 @@ int main() {
         num = num / 10;
     }
 
-    
+    vector<int> finres;
+    for (int i = (res.size()-1); i >= 0; i--) {
+        tc = res[i];
+        finres.push_back(tc);
+    }
+
+    for (int num : finres) {
+        cout << num << " ";
+    }
+    cout << endl;    
 
     return 0;
 }
