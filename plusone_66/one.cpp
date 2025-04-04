@@ -5,7 +5,7 @@ int main() {
     vector<int> arr = {9,8,7,6,5,4,3,2,1,0};
 
     int n = arr.size();
-    int num = 0;
+    long num = 0;
     int c = 1;
     for (int i = n-1; i >= 0; i--) {
         num = num + (arr[i]*c);
