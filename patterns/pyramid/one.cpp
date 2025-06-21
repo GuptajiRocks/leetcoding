@@ -53,7 +53,7 @@ int main() {
     // downward_increase();
     // downward_decrease();
     //down_dec_but_blank();
-    down_pyramid();
+    //down_pyramid();
     
 
 
