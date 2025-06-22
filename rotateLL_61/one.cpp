@@ -51,20 +51,37 @@ Node* ret_prel(Node* trav) {
     return trav;
 }
 
-int main() {
-    Logging l1;
-    Node* head = jesus();
-    l1.display_log(head);
-    Node* trav = ret_prel(head);
-
-    // Currently trav pointer has previous value.
-
+Node* rotate(Node* trav, Node* head) { 
     Node* temp = trav->next;
     temp->next = head;
     head = temp;
     trav->next = nullptr;
 
-    display(head);
+    return head;
+}
+
+int main() {
+    //Logging l1;
+    Node* head = jesus();
+    //l1.display_log(head);
+    Node* trav = ret_prel(head);
+
+    // Currently trav pointer has previous value.
+
+    // Node* temp = trav->next;
+    // temp->next = head;
+    // head = temp;
+    // trav->next = nullptr;
+
+    // display(head);
+
+    Node* head1 = rotate(trav, head);
+    display(head1);
+
+    Node* trav1 = ret_prel(head1);
+    Node* head2 = rotate(trav1, head1);
+
+    display(head2);
 
     return 0;
 }
