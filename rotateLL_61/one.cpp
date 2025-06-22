@@ -11,6 +11,21 @@ struct Node {
     }
 };
 
+class Logging {
+    public:
+    void display_log(Node* temp1) {
+        int counter = 0;
+        while (temp1 != nullptr) {
+            cout << "In iteration " << counter << " the value at Node " << (counter + 1) << endl;
+            cout << "--" << endl;
+            cout << temp1->data << " " << endl;
+            cout << "--" << endl;
+            temp1 = temp1->next;
+            counter++;
+        }
+    }
+};
+
 Node* jesus() { 
     Node* head = new Node(1);
     head->next = new Node(2);
@@ -30,19 +45,23 @@ void display(Node* trav) {
 }
 
 Node* ret_prel(Node* trav) {
-    while (trav->next != nullptr) {
+    while (trav->next->next != nullptr) {
         trav = trav->next;
     }
-
     return trav;
 }
 
 int main() {
+    Logging l1;
     Node* head = jesus();
+    l1.display_log(head);
     Node* trav = ret_prel(head);
 
-    trav->next->next = head;
-    head = trav->next;
+    // Currently trav pointer has previous value.
+
+    Node* temp = trav->next;
+    temp->next = head;
+    head = temp;
     trav->next = nullptr;
 
     display(head);
