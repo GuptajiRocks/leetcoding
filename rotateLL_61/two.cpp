@@ -12,6 +12,7 @@ struct Node {
 };
 
 
-int main() { 
+int main() {
+    
 
 }
