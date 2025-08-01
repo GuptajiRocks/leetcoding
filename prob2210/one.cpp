@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> nums = {2,4,1,1,6,5};
+vector<int> nums = {6,6,5,5,4,1
 
 
 //     int nums[] = {2,4,1,1,6,5};
@@ -35,7 +35,17 @@ void jesus2(vector<int>& nums) {
         l = (i-1);
         r = (i+1);
 
+        if ((nums[l] < nums[i]) && (nums[r] < nums[i]) && (nums[l] != nums[i]) && (nums[r] != nums[i])) {
+            cout << "Hill\n";
+            counter++;
+        } else if ((nums[l] > nums[i]) && (nums[r] > nums[i]) && (nums[l] != nums[i]) && (nums[r] != nums[i])) {
+            cout << "Valley\n";
+            counter++;
+        } else {
+            continue;
+        }
 
+        cout << "Counter -> " << counter << endl;
     }
 
     // cout << counter << endl;
