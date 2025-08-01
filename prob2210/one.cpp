@@ -1,13 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> nums = {6,6,5,5,4,1
+vector<int> nums = {6,6,5,5,4,1};
 
 
 //     int nums[] = {2,4,1,1,6,5};
 
 //     int counter = 0;
-
 //     for (int i = 0; i < 6; i++) {
 //         if ((i != 0) && (nums[i-1] < nums[i]) && (nums[i+1] < nums[i])) {
 //             counter++;
