@@ -3,8 +3,7 @@ using namespace std;
 
 vector<int> nums = {6,6,5,5,4,1};
 
-
-//     int nums[] = {2,4,1,1,6,5};
+int nums2[] = {2,4,1,1,6,5};
 
 //     int counter = 0;
 //     for (int i = 0; i < 6; i++) {
@@ -22,39 +21,42 @@ vector<int> nums = {6,6,5,5,4,1};
 //     cout << "Counter -> " << counter << endl;
 // }
 
-void jesus2(vector<int>& nums) {
-    int counter = 0;
-    int l,r;
-    l = r = 0;
+// void jesus2(vector<int>& nums) {
+//     int counter = 0;
+//     int l,r;
+//     l = r = 0;
 
-    for (int i = 0; i < nums.size(); i++) {
-        if ((i == 0) || ((i+1) > (nums.size() - 1))) {
-            continue;
-        }
-        l = (i-1);
-        r = (i+1);
+//     for (int i = 0; i < nums.size(); i++) {
+//         if ((i == 0) || ((i+1) > (nums.size() - 1))) {
+//             continue;
+//         }
+//         l = (i-1);
+//         r = (i+1);
 
-        if ((nums[l] < nums[i]) && (nums[r] < nums[i]) && (nums[l] != nums[i]) && (nums[r] != nums[i])) {
-            cout << "Hill\n";
-            counter++;
-        } else if ((nums[l] > nums[i]) && (nums[r] > nums[i]) && (nums[l] != nums[i]) && (nums[r] != nums[i])) {
-            cout << "Valley\n";
-            counter++;
-        } else {
-            continue;
-        }
+//         if ((nums[l] < nums[i]) && (nums[r] < nums[i]) && (nums[l] != nums[i]) && (nums[r] != nums[i])) {
+//             cout << "Hill\n";
+//             counter++;
+//         } else if ((nums[l] > nums[i]) && (nums[r] > nums[i]) && (nums[l] != nums[i]) && (nums[r] != nums[i])) {
+//             cout << "Valley\n";
+//             counter++;
+//         } else {
+//             continue;
+//         }
 
-        cout << "Counter -> " << counter << endl;
-    }
+//         cout << "Counter -> " << counter << endl;
+//     }
 
-    // cout << counter << endl;
+//     // cout << counter << endl;
+// }
+
+void jesus3() {
+    
 }
-
 
 
 int main() {
     //jesus();
 
-    jesus2(nums);
+    //jesus2(nums);
     return 0;
 }
