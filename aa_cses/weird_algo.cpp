@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void jesus(int n) { 
+void jesus(long long int n) { 
     cout << n << " ";
     while (n != 1) {
         if (n % 2 == 0) {
@@ -15,7 +15,7 @@ void jesus(int n) {
 }
 
 int main() {
-    int num;
+    long long int num;
     cin >> num;
 
     jesus(num);
