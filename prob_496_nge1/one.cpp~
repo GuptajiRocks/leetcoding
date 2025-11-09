@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	vector<int> nums1 = {2,4};
+	vector<int> nums2 = {1,2,3,4};
+
+	int arr[nums1.size()];
+	int tc = 0;
+
+	for (int i = 0; i < nums1.size(); i++) {
+		tc = nums1[i];
+		for (int j = 0; j < nums2.size(); j++) {
+			if (nums2[j] == tc) {
+				for (int k = j+1; k < nums2.size(); k++) {
+					arr[i] = -1;
+					if (nums2[k] > tc) {
+						arr[i] = nums2[k];
+						break;
+					}
+				}
+				//arr[i] = -1;
+			}
+		}
+	}
+
+	for (int i = 0; i < nums1.size(); i++) {
+		cout << arr[i] << endl;
+	}
+
+	return 0;
+}
